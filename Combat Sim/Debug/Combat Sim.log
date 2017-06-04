@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\aaron\desktop\coding projects\combat sim\combat sim\main.cpp(17): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Combat Sim.vcxproj -> C:\Users\Aaron\Desktop\Coding Projects\Combat Sim\Debug\Combat Sim.exe
+  Combat Sim.vcxproj -> C:\Users\Aaron\Desktop\Coding Projects\Combat Sim\Debug\Combat Sim.pdb (Partial PDB)
