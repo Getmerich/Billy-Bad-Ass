@@ -28,10 +28,10 @@ int main()
 		cout << "Billy rolled: " << eroll << endl << "Baddie rolled: " << sroll << endl;
 
 		if (eroll >= sroll) {
-			Baddie.hp = turn(Billy.hp, Billy.hit, Baddie.hp);
+			Baddie.hp = turn(Billy.dmg, Billy.hit, Baddie.hp);
 			cout << "The Skeleton's health is now: " << Baddie.hp << endl << endl;
 			if (Baddie.hp > 0) {
-				Billy.hp = turn(Baddie.hp, Baddie.hit, Billy.hp);
+				Billy.hp = turn(Baddie.dmg, Baddie.hit, Billy.hp);
 				cout << "The Elf's health is now: " << Billy.hp << endl << endl;
 			}
 		}
