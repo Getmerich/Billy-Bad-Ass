@@ -1,4 +1,2 @@
 ﻿  main.cpp
-c:\users\aaron\desktop\coding projects\billy-bad-ass\combat sim\main.cpp(22): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Combat Sim.vcxproj -> C:\Users\Aaron\Desktop\Coding Projects\Billy-Bad-Ass\x64\Debug\Combat Sim.exe
-  Combat Sim.vcxproj -> C:\Users\Aaron\Desktop\Coding Projects\Billy-Bad-Ass\x64\Debug\Combat Sim.pdb (Partial PDB)
+LINK : fatal error LNK1104: cannot open file 'SDL2main.lib'
