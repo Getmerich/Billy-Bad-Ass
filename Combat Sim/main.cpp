@@ -1,6 +1,7 @@
 #include <iostream>
 #include <time.h>
 #include "Warrior.h"
+#include "Skeleton.h"
 #include "Ranger.h"
 
 
@@ -10,35 +11,36 @@ int turn(int, int, int);
 
 int main()
 {
-	int elfh = 10, skelh = 10;
-	int edmg = 2, sdmg = 1;
+	Warrior Billy;
+	Skeleton Baddie;
+
+
 	int eroll = 0, sroll = 0, hroll = 0;
-	int eacc = 50, sacc = 75;
 	int die = 0;
 	int i = 0;
 
 	srand(time(0));
 
-	while (elfh > 0 && skelh > 0) {
-		cout << "Elf Health: " << elfh << endl << "Skeleton Health: " << skelh << endl;
+	while (Billy.hp > 0 && Baddie.hp > 0) {
+		cout << "Billy's Health: " << Billy.hp << endl << "Skeleton's Health: " << Baddie.hp << endl;
 		eroll = (rand() % 6) + 1;
 		sroll = (rand() % 6) + 1;
-		cout << "The elf rolled: " << eroll << endl << "The skeleton rolled: " << sroll << endl;
+		cout << "Billy rolled: " << eroll << endl << "Baddie rolled: " << sroll << endl;
 
 		if (eroll >= sroll) {
-			skelh = turn(edmg, eacc, skelh);
-			cout << "The Skeleton's health is now: " << skelh << endl << endl;
-			if (skelh > 0) {
-				elfh = turn(sdmg, sacc, elfh);
-				cout << "The Elf's health is now: " << elfh << endl << endl;
+			Baddie.hp = turn(Billy.hp, Billy.hit, Baddie.hp);
+			cout << "The Skeleton's health is now: " << Baddie.hp << endl << endl;
+			if (Baddie.hp > 0) {
+				Billy.hp = turn(Baddie.hp, Baddie.hit, Billy.hp);
+				cout << "The Elf's health is now: " << Billy.hp << endl << endl;
 			}
 		}
 		else {
-			elfh = turn(sdmg, sacc, elfh);
-			cout << "The Elf's health is now: " << elfh << endl << endl;
-			if (elfh > 0) {
-				skelh = turn(edmg, eacc, skelh);
-				cout << "The Skeleton's health is now: " << skelh << endl << endl;
+			Billy.hp = turn(Baddie.dmg, Baddie.hit, Billy.hp);
+			cout << "The Elf's health is now: " << Billy.hp << endl << endl;
+			if (Billy.hp > 0) {
+				Baddie.hp = turn(Billy.dmg, Billy.hit, Baddie.hp);
+				cout << "The Skeleton's health is now: " << Baddie.hp << endl << endl;
 			}
 		}
 	}
