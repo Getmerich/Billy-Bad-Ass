@@ -1,8 +1,15 @@
+/* Things to do:
+	-create a window to display the characters
+	-add 3 races and 5 classes, allow for user to choose race/class
+	-have about 10 enemies to fight
+	-allow for basic movement */
+
 #include <iostream>
 #include <time.h>
 #include "Warrior.h"
 #include "Skeleton.h"
 #include "Ranger.h"
+#include <SDL.h>
 
 
 using namespace std;
