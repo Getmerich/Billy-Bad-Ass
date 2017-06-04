@@ -18,10 +18,10 @@ int main()
 	int eroll = 0, sroll = 0, hroll = 0;
 	int die = 0;
 	int i = 0;
-
+	char flag;
 	srand(time(0));
 
-	while (Billy.hp > 0 && Baddie.hp > 0) {
+	do{
 		cout << "Billy's Health: " << Billy.hp << endl << "Skeleton's Health: " << Baddie.hp << endl;
 		eroll = (rand() % 6) + 1;
 		sroll = (rand() % 6) + 1;
@@ -42,9 +42,13 @@ int main()
 				Baddie.hp = turn(Billy.dmg, Billy.hit, Baddie.hp);
 				cout << "The Skeleton's health is now: " << Baddie.hp << endl << endl;
 			}
-		}
-	}
-	system("pause");
+		}	
+
+		cout << "Keep fighting?(y/n)    ";
+	
+		cin >> flag;
+	} while (Billy.hp > 0 && Baddie.hp > 0 && (flag == 'y' || flag == 'Y'));
+	std::system("pause");
 
 	return 0;
 }
