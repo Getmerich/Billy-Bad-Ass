@@ -20,10 +20,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\ZenMaster155-billy-bad-ass-dc8d8205e177\ZenMaster155-billy-bad-ass-dc8d8205e177\Ranger.h">
+    <ClInclude Include="Skeleton.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\ZenMaster155-billy-bad-ass-dc8d8205e177\ZenMaster155-billy-bad-ass-dc8d8205e177\Warrior.h">
+    <ClInclude Include="Ranger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Warrior.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

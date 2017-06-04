@@ -1,6 +1,6 @@
-/* Warrior Class Role 
+/* Warrior Class Role
 
-TO DO (EVENTUALLY): 
+TO DO (EVENTUALLY):
 inventory,
 map to walk on,
 monster spawning,
@@ -11,8 +11,8 @@ different race/class combinations,
 
 
 class Warrior {
-	
-	public:
+
+public:
 
 	int dmg = 15;
 	int hp = 50;

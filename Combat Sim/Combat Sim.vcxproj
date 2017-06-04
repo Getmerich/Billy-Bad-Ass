@@ -22,8 +22,9 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\ZenMaster155-billy-bad-ass-dc8d8205e177\ZenMaster155-billy-bad-ass-dc8d8205e177\Ranger.h" />
-    <ClInclude Include="..\..\ZenMaster155-billy-bad-ass-dc8d8205e177\ZenMaster155-billy-bad-ass-dc8d8205e177\Warrior.h" />
+    <ClInclude Include="Ranger.h" />
+    <ClInclude Include="Skeleton.h" />
+    <ClInclude Include="Warrior.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

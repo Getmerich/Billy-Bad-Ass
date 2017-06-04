@@ -1,5 +1,8 @@
 #include <iostream>
 #include <time.h>
+#include "Warrior.h"
+#include "Ranger.h"
+
 
 using namespace std;
 
