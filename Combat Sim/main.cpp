@@ -4,6 +4,14 @@
 	-have about 10 enemies to fight
 	-allow for basic movement */
 
+
+/*	
+	All of the create window shit should be placed in its own file, leaving main as the
+	overlay to begin the window as its own class and to use functions on the window that
+	involve drawing and pushing to the screen each time X thing happens.
+*/	
+
+
 #include <iostream>
 #include <time.h>
 #include "Warrior.h"
