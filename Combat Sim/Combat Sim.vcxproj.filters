@@ -29,5 +29,8 @@
     <ClInclude Include="Warrior.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="GameScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
